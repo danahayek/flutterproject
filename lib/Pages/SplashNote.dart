@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
 import 'HomePage.dart';
+import '../main.dart';
 
 class SplashNote extends StatefulWidget {
   const SplashNote({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class _SplashNoteState extends State<SplashNote> {
     // TODO: implement initState
     super.initState();
     Timer(Duration(seconds: 3),(){
-      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>HomeNote()));
+      Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>home()));
     });
   }
 

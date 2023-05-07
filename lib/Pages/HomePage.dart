@@ -1,7 +1,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterproject/NoteDetailsPage.dart';
+import 'package:flutterproject/Pages/NoteDetailsPage.dart';
 
 import 'AddNotePage.dart';
 
@@ -19,68 +19,64 @@ class _HomeNoteState extends State<HomeNote> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        title: Text('Note App',style: TextStyle(color: Colors.white)), // Set text colorfontWeight: FontWeight.bold,),
-      centerTitle: true,
-      backgroundColor: Colors.blue[800],),
-      drawer: Drawer(
-            child: ListView(
-              padding: EdgeInsets.zero,
-              children: <Widget>[
-                DrawerHeader(
-                  decoration: BoxDecoration(
-                    color: Colors.blue,
-                  ),
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      CircleAvatar(
-                        radius: 40.0,
-                      ),
-                      SizedBox(height: 10),
-                      Text(
-                        'accountName',
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 18.0,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-                ListTile(
-                  leading: Icon(Icons.home),
-                  title: Text('Home'),
-                  onTap: () {
-                    //TODO: navigate to home screen
-                  },
-                ),
-                ListTile(
-                  leading: Icon(Icons.person),
-                  title: Text('Profile'),
-                  onTap: () {
+      // appBar: AppBar(
+      //   title: Text('Note App',style: TextStyle(color: Colors.white)), // Set text colorfontWeight: FontWeight.bold,),
+      // centerTitle: true,
+      // backgroundColor: Colors.blue[800],),
+      // drawer: Drawer(
+      //       child: ListView(
+      //         padding: EdgeInsets.zero,
+      //         children: <Widget>[
+      //           DrawerHeader(
+      //             decoration: BoxDecoration(
+      //               color: Colors.blue,
+      //             ),
+      //             child: Column(
+      //               mainAxisAlignment: MainAxisAlignment.center,
+      //               children: [
+      //                 CircleAvatar(
+      //                   radius: 40.0,
+      //                 ),
+      //                 SizedBox(height: 10),
+      //                 Text(
+      //                   'accountName',
+      //                   style: TextStyle(
+      //                     color: Colors.white,
+      //                     fontSize: 18.0,
+      //                     fontWeight: FontWeight.bold,
+      //                   ),
+      //                 ),
+      //               ],
+      //             ),
+      //           ),
+      //           ListTile(
+      //             leading: Icon(Icons.home),
+      //             title: Text('Home'),
+      //             onTap: () {
+      //               //TODO: navigate to home screen
+      //             },
+      //           ),
+      //           ListTile(
+      //             leading: Icon(Icons.person),
+      //             title: Text('Profile'),
+      //             onTap: () {
+      //
+      //               //TODO: navigate to profile screen
+      //             },
+      //           ),
+      //           ListTile(
+      //             leading: Icon(Icons.settings),
+      //             title: Text('Settings'),
+      //             onTap: () {
+      //               //TODO: navigate to settings screen
+      //             },
+      //           ),
+      //         ],
+      //       ),
+      // ),
+      //
+      //
 
-                    //TODO: navigate to profile screen
-                  },
-                ),
-                ListTile(
-                  leading: Icon(Icons.settings),
-                  title: Text('Settings'),
-                  onTap: () {
-                    //TODO: navigate to settings screen
-                  },
-                ),
-                ListTile(
-                  leading: Icon(Icons.exit_to_app),
-                  title: Text('Logout'),
-                  onTap: () {
-                    //TODO: implement logout functionality
-                  },
-                ),
-              ],
-            ),
-      ),
       body:
 
       Padding(
